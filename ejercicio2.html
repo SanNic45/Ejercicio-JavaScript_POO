@@ -1,0 +1,18 @@
+<script>
+// Definir el arreglo de prueba
+let inicio = ["unacadena", 3, 9, 1, 10, 500, 1, 10, true];
+// Filtrar solo los números del arreglo de inicio
+let numeros = inicio.filter(elemento => typeof elemento === 'number');
+// Implementar el algoritmo de ordenación
+for (let i = 0; i < numeros.length - 1; i++) {
+    for (let j = 0; j < numeros.length - i - 1; j++) {
+        if (numeros[j] > numeros[j + 1]) {
+            // Intercambiar los elementos si están en el orden incorrecto
+            let temp = numeros[j];
+            numeros[j] = numeros[j + 1];
+            numeros[j + 1] = temp;
+        }
+    }
+}
+console.log("Números ordenados: " + numeros.join(', '));
+</script> 

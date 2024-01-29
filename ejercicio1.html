@@ -1,0 +1,13 @@
+<script>
+// Paso 1: Crear la variable
+let numeroDeElementos = 4;
+// Paso 2: Inicializar la serie Fibonacci con los primeros dos elementos
+let fibonacciSerie = [0, 1];
+// Paso 3: Calcular y agregar los elementos restantes a la serie Fibonacci
+for (let i = 2; i < numeroDeElementos; i++) {
+    let nuevoElemento = fibonacciSerie[i - 1] + fibonacciSerie[i - 2];
+    fibonacciSerie.push(nuevoElemento);
+}
+// Paso 4: Imprimir la serie Fibonacci
+console.log("Serie Fibonacci hasta el elemento " + numeroDeElementos + ": " + fibonacciSerie.join(','));
+</script> 
